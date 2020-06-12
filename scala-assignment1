@@ -1,0 +1,96 @@
+a.
+val Int = 10
+bb = "funny"
+println(bb)
+explanation:
+//For Val Int=10, scala interprets Int as variable 
+//When we give bb="funny", it gives error that bb is not found
+//Or if try passing the same string to bb, it throws exception that reassginment to Val cos val is already inferred as Integer data type and immutable
+b.
+val dd: Double = 9.99
+dd = 10.01
+println(dd)
+explanation:
+//In case if dd was declared as var the it would have printed "10.01" since its declared as Val which is immutable hence throws reassignment to val error
+c.
+println(true && false)  
+o/p:false
+d.
+println(5 < 6 && 10 == 10)
+o/p:true
+e.
+println("frank" || true)
+o/p:true
+f.
+val f = "4.44".toFloat
+println(f.getClass)
+o/p:"Float"
+g.
+println(77.toString == "77")
+true
+h.
+val number = {val x = 2 * 2; x + 40}
+println(number)
+o/p:44
+i.
+val ttt = {
+val first = "katy"
+s"$first perry"
+}
+println(ttt)
+o/p:katy perry
+j.
+var band = {
+var name = "sublime"
+name
+}
+println(name)
+o/p:sublime
+k.
+if (true) {
+"it is true"
+} else {
+"i'm confused"
+}
+o/p:it is true
+l.
+for(i<-1 to 10 if i%2==0) {
+println(i)
+}
+for(i<-1 until 11 if i%2==0) {
+println(i)
+}
+for(i<-2 until 11 by 2){
+println(i)
+}
+m.
+output of the below code snippet
+var x = 10 // assigned as 10
+while (x <= 10 ) //10<=10 true
+{
+if (x <= 5 ) //false
+println (x)
+x = x + 1	// 10+1
+} 
+o/p:No output
+0.print the pattern
+
+ var str="";
+    var x=0;
+    var y=0;
+    for(rows<- 8 to 1 by -2){
+      y=x
+      while(x>=0)
+      {
+        str=str+"\t";
+        x=x-1;
+      }
+      for(i<-1 to rows) {
+        str=str+"*"+"\t";
+
+      }
+      str=str+"\n";
+      x=y+1;
+    }
+    println(str);
+  }
